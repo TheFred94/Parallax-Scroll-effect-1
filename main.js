@@ -2,6 +2,7 @@ const h1 = document.getElementById("h1"),
   banner = document.getElementById("banner"),
   button = document.getElementById("button");
 
+//  Scrolling effekt //
 const onScroll = (event) => {
   const scrollPosition = event.target.scrollingElement.scrollTop;
 
