@@ -53,6 +53,7 @@ h3 {
   font-family: var(--header3_p);
   font-size: var(--fsize3);
   color: var(--coldarkgreen);
+  margin: 0;
 }
 
 .banner {

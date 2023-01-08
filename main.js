@@ -2,7 +2,7 @@ const h1 = document.getElementById("h1"),
   banner = document.getElementById("banner"),
   button = document.getElementById("button");
 
-//  Scrolling effekt //
+// SCROLLING EFFEKT PÅ TOP BANNER
 const onScroll = (event) => {
   const scrollPosition = event.target.scrollingElement.scrollTop;
 
@@ -24,5 +24,15 @@ const onScroll = (event) => {
     button.style.scale = 1;
   }
 };
+
+// SCROLLER TIL NYHEDSBREV VED KLIK PÅ KNAP
+function scrollFunction1() {
+  let e = document.getElementById("nyhedsbrev");
+  e.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+    inline: "start",
+  });
+}
 
 document.addEventListener("scroll", onScroll);
